@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;  /* This ensures that the logo and info-logout-container are spaced apart */
+    align-items: center;  /* This aligns them vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;  /* This aligns the logo vertically in the center */
+    justify-content: flex-start;  /* This aligns the logo to the left */
+}
+
+.info-logout-container {
+    display: flex;
+    align-items: center;  /* This aligns the user info and logout button vertically in the center */
+    justify-content: flex-end;  /* This aligns the user info and logout button to the right */
+}
+.user-email {
+    margin-right: 20px;
+}
+
+.logout-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: calc(100% - 160px);
+}
+
+.btn-group input[type=text],
+.btn-group textarea,
+.btn-group button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Logo style */
+.email-icon {
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+/* Container for forms */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error message style */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}

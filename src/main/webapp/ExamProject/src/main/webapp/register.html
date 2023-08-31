@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		// Function to show error messages from server
+		window.onload = function () {
+			const urlParams = new URLSearchParams(window.location.search);
+			const error = urlParams.get('error');
+			if (error) {
+				document.getElementById("error-message").innerText = decodeURIComponent(error);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Register</h1>
+		<div id="error-message" class="error"></div>
+		<form action="RegisterServlet" method="post">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="surname">Surname:</label>
+				<input type="text" id="surname" name="surname" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<button type="submit">Register</button>
+		</form>
+	</div>
+</body>
+</html>
